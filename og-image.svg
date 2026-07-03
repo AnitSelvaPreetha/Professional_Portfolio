@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#17172d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="32" fill="url(#bg)"/>
+  <rect x="54" y="54" width="1092" height="522" rx="28" fill="#0f1121" stroke="rgba(255,255,255,0.08)"/>
+  <text x="96" y="180" font-family="'Inter', 'Segoe UI', sans-serif" font-size="34" font-weight="600" fill="#8b8fb8">PORTFOLIO</text>
+  <text x="96" y="260" font-family="'Inter', 'Segoe UI', sans-serif" font-size="70" font-weight="800" fill="#ffffff">Anit Selva Preetha</text>
+  <text x="96" y="330" font-family="'Inter', 'Segoe UI', sans-serif" font-size="44" font-weight="600" fill="url(#accent)">Java Developer</text>
+  <text x="96" y="390" font-family="'Inter', 'Segoe UI', sans-serif" font-size="34" font-weight="500" fill="#d4d7e8">Building scalable applications at Tech Mahindra</text>
+  <rect x="96" y="440" width="280" height="74" rx="16" fill="#11141f" stroke="url(#accent)" stroke-width="2"/>
+  <text x="138" y="486" font-family="'JetBrains Mono', monospace" font-size="38" font-weight="700" fill="url(#accent)">&lt;anit/&gt;</text>
+</svg>
