@@ -315,7 +315,7 @@ console.log(
   "color: #6366f1; font-size: 16px; font-weight: bold;",
 );
 console.log(
-  "%c📧 Feel free to reach out: shashank@example.com",
+  "%c📧 Feel free to reach out: anitspreetha@gmail.com",
   "color: #22c55e; font-size: 12px;",
 );
 console.log(
@@ -325,12 +325,13 @@ console.log(
 console.log(
   "%c" +
     `
-   _____ _               _                 _    
-  / ____| |             | |               | |   
- | (___ | |__   __ _ ___| |__   __ _ _ __ | | __
-  \\___ \\| '_ \\ / _\` / __| '_ \\ / _\` | '_ \\| |/ /
-  ____) | | | | (_| \\__ \\ | | | (_| | | | |   < 
- |_____/|_| |_|\\__,_|___/_| |_|\\__,_|_| |_|_|\\_\\
+      _    _   _ ___ _____
+     / \\  | \\ | |_ _|_   _|
+    / _ \\ |  \\| || |  | |
+   / ___ \\| |\\  || |  | |
+  /_/   \\_\\_| \\_|___| |_|
+
+    Backend Developer 🚀
 `,
   "color: #8b5cf6; font-size: 10px;",
 );
