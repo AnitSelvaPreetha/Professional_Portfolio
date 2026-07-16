@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anit Selva Preetha - Java Full-Stack Developer."
+    />
+    <title>Anit Selva Preetha | Java Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Anit Selva Preetha | Java Full-Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Java Full-Stack Developer at Tech Mahindra — building scalable Java microservices, cloud-ready apps and CI/CD pipelines."
+    />
+    <meta property="og:image" content="./og-image.svg" />
+    <meta property="og:url" content="https://github.com/AnitSelvaPreetha" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Anit Selva Preetha | Java Full-Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Java Full-Stack Developer at Tech Mahindra — building scalable Java microservices, cloud-ready apps and CI/CD pipelines."
+    />
+    <meta name="twitter:image" content="./og-image.svg" />
+  </head>
+
+  <body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Floating code particles -->
+    <div class="code-particles" id="code-particles"></div>
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <span class="logo-text"
+            >&lt;<span class="logo-blink">anit</span>/&gt;</span
+          >
+        </a>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#about" class="nav-link"
+            ><span class="nav-comment">// </span>About</a
+          >
+          <a href="#projects" class="nav-link"
+            ><span class="nav-comment">// </span>Projects</a
+          >
+          <a href="#experience" class="nav-link"
+            ><span class="nav-comment">// </span>Experience</a
+          >
+          <a href="#skills" class="nav-link"
+            ><span class="nav-comment">// </span>Skills</a
+          >
+          <a href="#contact" class="nav-link"
+            ><span class="nav-comment">// </span>Contact</a
+          >
+          <a href="./resume.pdf" class="nav-link nav-resume" target="_blank"
+            ><span class="nav-comment">// </span>Resume 📄</a
+          >
+        </div>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="hero-gradient"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="hero-content">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="terminal-title">anit@portfolio ~ </span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-command" id="typed-command"></span>
+              <span class="terminal-cursor">▊</span>
+            </div>
+            <div class="terminal-output" id="terminal-output"></div>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>Available for opportunities
+        </div>
+        <h1 class="hero-title">
+          I'm
+          <span class="gradient-text glitch" data-text="Anit Selva Preetha"
+            >Anit Selva Preetha</span
+          >
+        </h1>
+        <h2 class="hero-subtitle">
+          <span class="code-bracket">{</span> Java Full-Stack Developer
+          <span class="code-bracket">}</span>
+        </h2>
+        <p class="hero-tagline">
+          Specializing in building scalable Java microservices and intelligent,
+          cloud-ready applications.
+        </p>
+        <p class="hero-description">
+          At <strong>Tech Mahindra</strong>, I am developing high-performance
+          backend systems using the Spring Ecosystem, containerizing them with
+          Docker &amp; Kubernetes, and deploying them securely across AWS
+          infrastructure.
+        </p>
+        <div class="hero-stats">
+          <div class="stat" data-value="1.5">
+            <span class="stat-number" id="stat-years">1.5</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat" data-value="3">
+            <span class="stat-number" id="stat-tests">5</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat" data-value="1">
+            <span class="stat-number" id="stat-faster">1</span>
+            <span class="stat-label">API Calls Tested</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary btn-large">
+            <span class="btn-text">View My Projects</span>
+            <span class="btn-icon">→</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary btn-large">
+            <span class="btn-text">Contact Me</span>
+          </a>
+        </div>
+        <div class="hero-secondary-cta">
+          <a
+            href="./resume.pdf"
+            class="btn btn-resume"
+            target="_blank"
+            download
+          >
+            <span class="btn-icon">📄</span>
+            <span class="btn-text">Download Resume</span>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+        <span>scroll.down()</span>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// About Me</span>
+          <h2 class="section-title">
+            Passionate About Building
+            <span class="highlight-word">Scalable</span> Systems
+          </h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="about-lead">
+              I am a Backend-focused Software Engineer with
+              <strong
+                ><span id="about-years" class="dynamic-years">0.0</span>
+                years</strong
+              >
+              of hands-on experience architecting distributed systems and
+              cloud-native applications.
+            </p>
+            <p>
+              My core expertise lies in the Java &amp; Spring Boot ecosystem,
+              where I specialize in breaking down complex problems into scalable
+              Microservices using Spring Cloud, Security, and Data JPA. I love
+              optimizing continuous integration pipelines via Jenkins and
+              orchestrating containers with Docker and Kubernetes.
+            </p>
+            <p>
+              Always looking ahead, I am actively integrating next-gen
+              capabilities into enterprise logic using Spring AI, while bridging
+              the gap to the frontend with React. I thrive in fast-paced
+              environments where I can build features end-to-end and deliver
+              measurable system performance.
+            </p>
+          </div>
+          <div class="about-code">
+            <div class="code-window">
+              <div class="code-header">
+                <div class="code-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="code-title">Developer.java</span>
+              </div>
+              <div class="code-body">
+                <pre><code><span class="line-num">1</span>  <span class="keyword">public class</span> <span class="class-name">Developer</span> {
+<span class="line-num">2</span>  
+<span class="line-num">3</span>    <span class="keyword">private</span> String name = <span class="string">"Anit Selva Preetha"</span>;
+<span class="line-num">4</span>    <span class="keyword">private</span> String role = <span class="string">"Java Full-Stack Developer"</span>;
+<span class="line-num">5</span>    <span class="keyword">private double</span> experience = <span class="number"><span id="dev-experience">0.0</span></span>;
+<span class="line-num">6</span>  
+<span class="line-num">7</span>    <span class="keyword">public</span> String[] <span class="method">getStack</span>() {
+<span class="line-num">8</span>      <span class="keyword">return new</span> String[] {
+<span class="line-num">9</span>        <span class="string">"Java"</span>, <span class="string">"Spring Boot"</span>,
+<span class="line-num">10</span>       <span class="string">"Docker"</span>, <span class="string">"Kubernetes"</span>,<span class="string">"AWS"</span>
+<span class="line-num">11</span>     };
+<span class="line-num">12</span>   }
+<span class="line-num">13</span> }</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// Featured Work</span>
+          <h2 class="section-title">
+            Projects & <span class="highlight-word">Impact</span>
+          </h2>
+          <p class="section-description">
+            Real problems solved with measurable outcomes.
+          </p>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1: StreakUp (Personal Project) -->
+          <article class="project-card featured">
+            <div class="project-header">
+              <div class="project-icon">🍽️</div>
+              <div class="project-meta">
+                <span class="project-type">Full-Stack App</span>
+                <a
+                  href="https://github.com/AnitSelvaPreetha/SpiceTales-Restaurant_Application"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <span class="link-icon">⌘</span> GitHub
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">SpiceTales</h3>
+            <p class="project-subtitle">
+              A role-based full-stack web application for managing restaurant
+              operations including ordering, reservations, billing, and
+              feedback.
+            </p>
+
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-value">Full</span>
+                <span class="metric-label">Stack</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">JWT</span>
+                <span class="metric-label">Auth</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">REST</span>
+                <span class="metric-label">API</span>
+              </div>
+            </div>
+
+            <div class="project-case-study">
+              <div class="case-study-item">
+                <span class="case-icon">🎯</span>
+                <div class="case-content">
+                  <strong>Goal:</strong> To automate and streamline restaurant
+                  operations while improving efficiency for admins, staff, and
+                  customers through a secure and user-friendly digital platform.
+                </div>
+              </div>
+              <div class="case-study-item">
+                <span class="case-icon">🛠️</span>
+                <div class="case-content">
+                  <strong>Built:</strong> Java, Spring Boot, Spring Security,
+                  Spring Data JPA, Thymeleaf, MySQL, HTML, CSS, Bootstrap,
+                  Maven.
+                </div>
+              </div>
+              <div class="case-study-item">
+                <span class="case-icon">✨</span>
+                <div class="case-content">
+                  <strong>Features:</strong> Role-based access
+                  (Admin/Staff/Customer), menu management, staff management,
+                  table reservation & allocation, food ordering system, shopping
+                  cart, real-time order tracking (Preparing/Ready/Delivered),
+                  billing, order history, and dish-wise feedback.
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Java</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">JWT</span>
+              <span class="tag">Docker</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// Career Journey</span>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot pulse"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-info">
+                  <h3 class="timeline-title">Associate Software Engineer</h3>
+                  <span class="timeline-company">@ Tech Mahindra</span>
+                </div>
+                <span class="timeline-date"
+                  ><span class="date-icon">📅</span> 26 Dec 2024 - Present</span
+                >
+              </div>
+              <ul class="timeline-list">
+                <li>
+                  <span class="list-arrow">→</span>
+                  Architected and scaled high-performance, secure backend
+                  modules for a critical Banking application utilizing Java and
+                  the Spring Boot ecosystem.
+                </li>
+                <li>
+                  <span class="list-arrow">→</span>
+                  Implemented robust enterprise logic and microservices patterns
+                  using Spring Cloud and Spring Security to ensure secure,
+                  transactional financial data processing.
+                </li>
+                <li>
+                  <span class="list-arrow">→</span>
+                  Optimized backend data persistence and Oracle DB performance
+                  through advanced database schema redesign and complex query
+                  optimization.
+                </li>
+                <li>
+                  <span class="list-arrow">→</span>
+                  Collaborated with cross-functional teams to design clean,
+                  well-documented RESTful APIs fully managed and exposed via
+                  Swagger.
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Spring Cloud</span>
+                <span class="tag">Spring Security</span>
+                <span class="tag">Microservices</span>
+                <span class="tag">Oracle DB</span>
+                <span class="tag">Swagger</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-info">
+                  <h3 class="timeline-title">Web Developer Intern</h3>
+                  <span class="timeline-company">@ AK Infopark</span>
+                </div>
+                <span class="timeline-date"
+                  ><span class="date-icon">📅</span> Feb 2024 - Mar 2024</span
+                >
+              </div>
+              <ul class="timeline-list">
+                <li>
+                  <span class="list-arrow">→</span>
+                  Developed and optimized responsive, interactive user
+                  interfaces for web applications utilizing React and modern
+                  JavaScript.
+                </li>
+                <li>
+                  <span class="list-arrow">→</span>
+                  Translated complex UI/UX wireframes into clean, reusable
+                  frontend components while ensuring seamless cross-browser
+                  compatibility.
+                </li>
+                <li>
+                  <span class="list-arrow">→</span>
+                  Collaborated with backend developers to integrate RESTful
+                  APIs, ensuring smooth data flow and state management across
+                  application workflows.
+                </li>
+                <li>
+                  <span class="list-arrow">→</span>
+                  Enhanced website performance, accessibility, and SEO using
+                  clean HTML5, CSS3, and modern styling methodologies.
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">React</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">Web Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// Technical Expertise</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+        </div>
+        <div class="skills-grid">
+          <!-- 1. Programming Languages -->
+          <div class="skill-category" data-category="languages">
+            <div class="skill-header">
+              <span class="skill-icon">💻</span>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-chip" data-skill="java">
+                <span class="chip-icon">☕</span> Java
+              </div>
+              <div class="skill-chip" data-skill="javascript">
+                <span class="chip-icon">⚡</span> JavaScript
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Frameworks & Ecosystem -->
+          <div class="skill-category" data-category="frameworks">
+            <div class="skill-header">
+              <span class="skill-icon">🍃</span>
+              <h3>Frameworks &amp; Ecosystem</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-chip" data-skill="spring">
+                <span class="chip-icon">🌿</span> Spring
+              </div>
+              <div class="skill-chip" data-skill="spring-boot">
+                <span class="chip-icon">🟩</span> Spring Boot
+              </div>
+              <div class="skill-chip" data-skill="spring-security">
+                <span class="chip-icon">🔒</span> Spring Security
+              </div>
+              <div class="skill-chip" data-skill="spring-cloud">
+                <span class="chip-icon">☁️</span> Spring Cloud
+              </div>
+              <div class="skill-chip" data-skill="microservices">
+                <span class="chip-icon">🧩</span> Microservices
+              </div>
+              <div class="skill-chip" data-skill="spring-ai">
+                <span class="chip-icon">🤖</span> Spring AI
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Databases -->
+          <div class="skill-category" data-category="databases">
+            <div class="skill-header">
+              <span class="skill-icon">🗄️</span>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-chip" data-skill="mysql">
+                <span class="chip-icon">🐬</span> MySQL
+              </div>
+              <div class="skill-chip" data-skill="mongodb">
+                <span class="chip-icon">🍃</span> MongoDB
+              </div>
+              <div class="skill-chip" data-skill="oracle">
+                <span class="chip-icon">💠</span> Oracle DB
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. DevOps & Cloud -->
+          <div class="skill-category" data-category="devops">
+            <div class="skill-header">
+              <span class="skill-icon">🚀</span>
+              <h3>DevOps &amp; Cloud</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-chip" data-skill="aws">
+                <span class="chip-icon">☁️</span> AWS
+              </div>
+              <div class="skill-chip" data-skill="docker">
+                <span class="chip-icon">🐳</span> Docker
+              </div>
+              <div class="skill-chip" data-skill="kubernetes">
+                <span class="chip-icon">☸️</span> Kubernetes
+              </div>
+              <div class="skill-chip" data-skill="jenkins">
+                <span class="chip-icon">⚙️</span> Jenkins / CI
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. API Tools & Version Control -->
+          <div class="skill-category" data-category="api-vcs">
+            <div class="skill-header">
+              <span class="skill-icon">🔗</span>
+              <h3>API Tools &amp; Version Control</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-chip" data-skill="postman">
+                <span class="chip-icon">📮</span> Postman
+              </div>
+              <div class="skill-chip" data-skill="swagger">
+                <span class="chip-icon">📘</span> Swagger / OpenAPI
+              </div>
+              <div class="skill-chip" data-skill="git">
+                <span class="chip-icon">🔀</span> Git
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Front-end -->
+          <div class="skill-category" data-category="frontend">
+            <div class="skill-header">
+              <span class="skill-icon">🎨</span>
+              <h3>Front-end</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-chip" data-skill="react">
+                <span class="chip-icon">⚛️</span> React
+              </div>
+              <div class="skill-chip" data-skill="html-css">
+                <span class="chip-icon">🌐</span> HTML &amp; CSS
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// Education</span>
+          <h2 class="section-title">Academic Background</h2>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">🎓</div>
+          <div class="education-content">
+            <h3 class="education-degree">
+              Bachelor of Engineering - Computer Science
+            </h3>
+            <p class="education-school">
+              University College of Engineering Nagercoil
+            </p>
+            <div class="education-meta">
+              <span><span class="meta-icon">📅</span> Aug 2020 - Jun 2024</span>
+              <span class="education-cgpa"
+                ><span class="meta-icon">⭐</span> CGPA: 7.9</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// Get In Touch</span>
+          <h2 class="section-title">
+            Let's <span class="highlight-word">Build</span> Something Together
+          </h2>
+          <p class="section-description">
+            I'm always open to discussing new opportunities and interesting
+            projects.
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-terminal">
+            <code>
+              <span class="terminal-prompt">$</span> echo "Hello, let's
+              connect!"
+            </code>
+          </div>
+
+          <!-- show email on click (no navigation) -->
+          <button
+            id="contact-cta"
+            class="contact-cta"
+            data-email="anitspreetha@gmail.com"
+            type="button"
+            aria-label="Show email address"
+          >
+            <span class="cta-brackets">&lt;</span>
+            Say Hello
+            <span class="cta-brackets">/&gt;</span>
+          </button>
+
+          <!-- inline email display (appears when user clicks Say Hello) -->
+          <div
+            id="email-display"
+            class="email-display"
+            aria-live="polite"
+            role="status"
+            style="
+              margin-top: 12px;
+              color: var(--text-secondary);
+              font-family: var(--font-mono);
+              display: none;
+            "
+          ></div>
+          <div class="social-links">
+            <a
+              href="https://github.com/AnitSelvaPreetha"
+              class="social-link"
+              target="_blank"
+            >
+              <span class="social-icon">⌘</span> GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/anit-preetha"
+              class="social-link"
+              target="_blank"
+            >
+              <span class="social-icon">◉</span> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticky Contact Button -->
+    <a href="#contact" class="sticky-contact-btn" id="sticky-contact">
+      <span class="sticky-icon">💬</span>
+      <span class="sticky-text">Let's Talk</span>
+    </a>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">
+          <span class="footer-code">const</span> author =
+          <span class="gradient-text">"Anit Selva Preetha"</span>;
+          <span class="footer-comment">// © 2026</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Konami code easter egg hint -->
+    <div class="easter-egg-hint" id="easter-egg-hint">
+      <span>🎮 Try the Konami code!</span>
+    </div>
+
+    <!-- dynamic experience handled in script.js -->
+    <script src="script.js"></script>
+  </body>
+</html>
