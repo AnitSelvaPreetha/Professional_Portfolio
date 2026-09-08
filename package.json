@@ -1,0 +1,21 @@
+{
+  "name": "anit-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio showcasing my work as a Backend Developer",
+  "type": "module",
+  "scripts": {
+    "dev": "npx http-server . -p 8080",
+    "build": "echo 'No build step required for static site'",
+    "preview": "npx http-server . -p 8080"
+  },
+  "keywords": [
+    "portfolio",
+    "java-developer",
+    "backend-developer"
+  ],
+  "author": "Anit Selva Preetha",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
